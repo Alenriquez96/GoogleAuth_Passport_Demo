@@ -29,12 +29,18 @@ app.get("/google/callBack", passport.authenticate('google', { failureRedirect: '
         httpOnly: true,
         sameSite: "strict",
     })
-    res.send("Welcome! You are now authenticated with google!");
+    res.send("Welcome! You are now authenticated with google! <a href='/logout'>Click here to logout!</a>");
 });
 
 
 app.get('/auth/failure', (req, res) => {
     res.send('Something went wrong..')  
+});
+
+app.get('/logout', (req, res) => {
+    req.logout();
+    req.session.destroy();
+    res.send('Goodbye!');
 });
 
 
