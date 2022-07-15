@@ -2,11 +2,13 @@ const express = require("express");
 const jwt = require("jsonwebtoken");
 const config = require("./config/config.js");
 const passport = require("passport");
+const session = require("express-session");
 require("./config/auth.js");
 
 const app = express();
 const port = 3000;
 
+app.use(session({ secret: 'SECRET'}));
 
 app.get("/", (req,res)=>{
     res.send('<a href="/auth/google">Authenticate with google </a>')
