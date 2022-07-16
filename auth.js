@@ -2,6 +2,7 @@ const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 require('dotenv').config();
 
+//Establecemos la estrategia de Google con los credenciales de nuestro proyecto
 passport.use(new GoogleStrategy({
     clientID: `${process.env.CLIENT_ID}`,
     clientSecret: `${process.env.CLIENT_SECRET}`,
@@ -13,9 +14,11 @@ passport.use(new GoogleStrategy({
   }
 ));
 
+//Esta función determina los datos que se van a guardar en la sesión de google: user
 passport.serializeUser(function (user, done) {
     done(null,user)
-})
+});
+//Determina que objeto borrar de la sesión: user
 passport.deserializeUser(function (user, done) {
     done(null,user)
 })
