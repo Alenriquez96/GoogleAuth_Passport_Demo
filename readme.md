@@ -30,3 +30,16 @@ Y después iniciar
 ```javascript
   npm start
 ```
+## Contenido del archivo .env
+
+Primero creamos el .env que luego añadiremos a .gitignore
+```javascript
+  CLIENT_ID
+  CLIENT_SECRET
+```
+## Cuenta de Google
+
+Ahora que ya tenemos el proyecto listo para ser lanzado, debemos antes crear unas credenciales de Google. Para ello,
+escribiremos en google: google credentials:
+
+![img](./assets/busquedagooglecredentials.png)
