@@ -1,20 +1,25 @@
+//Importamos dependencias
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const passport = require("passport");
 const session = require("express-session");
 require("./auth.js");
 
+//Inicializamos server
 const app = express();
 const port = 3000;
 
+//Inicializamos passport y la session de passport
 app.use(session({ secret: 'SECRET'}));
 app.use(passport.initialize());
 app.use(passport.session());
 
+//Ruta / 
 app.get("/", (req,res)=>{
     res.send('<a href="/auth/google">Authenticate with google </a>')
 });
 
+//Ruta que renderiza el prompt de Google con las cuentas
 app.get("/auth/google", passport.authenticate("google", { scope: ['email', 'profile'], prompt: "select_account" }));
 
 //Esta ruta tiene dos funciones, la primera es en caso de fallo nos redirecciona a /auth/failure, y la segunda, en caso de éxito realiza la función siguiente.
