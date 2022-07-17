@@ -57,25 +57,31 @@ Nos aparecerá un mensaje de configurar pantalla de consentimiento, vamos a él.
 
 
 ![img](./assets/typeconsentimiento.png)
+
 Elegimos externo
 
 
 ![img](./assets/pantallasisenticia.png)
+
 Aquí solo necesitamos marcar los campos obligatorios
 
 
 ![img](./assets/sigpantalla.png)
+
 Vamos a guardar y continuar
 
 ![img](./assets/sigpantalla2.png)
+
 Guardar y continuar
 
 ![img](./assets/volverpanel.png)
+
 Volvemos al panel y con esto ya tenemos configurado la pantalla de consentimiento.
 
 Ahora sí, vamos a credenciales y pulsamos de nuevo en Crear ID de cliente de OAuth. Escogemos aplicación web, y aquí llegan los pasos más importantes:
 
 ![img](./assets/callback.png)
+
 Debemos poner en URI de redireccionamiento autorizado, nuestra ruta 
 ```javascript
 /google/callBack
@@ -88,3 +94,8 @@ Pulsamos en guardar y nos aparecerán nuestro ID de cliente y secreto de Cliente
 ![img](./assets/clientid.png)
 
 
+### Esto es todo por la parte de la cuenta de Google 
+
+Una vez añadidas las credenciales a nuestro .env, el proyecto debería funcionar tal que así:
+
+![img](./assets/PruebaAuthEditado_TrimGif.gif)
