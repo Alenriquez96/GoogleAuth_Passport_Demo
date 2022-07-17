@@ -1,5 +1,7 @@
 # Google Auth demo con Passport.js y jsonwebtoken
 
+![img](./assets/google-signin-button-1024x260.png)
+
 Demostración de autenticación con Google hecha en Node.js con express, passport.js y almacenando un jsonwebtoken(jwt) en las cookies. Cuenta con login y logout.
 
 ## Dependencias
