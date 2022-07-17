@@ -18,7 +18,7 @@ npm i
 npm i --save-dev nodemon
 ```
 
-Para iniciar el proyecto en localhost:3000
+Para iniciar el proyecto en localhost:3000 debemos modificar scripts de package.json
 ```javascript
   "scripts": {
     "start": "nodemon index.js"
