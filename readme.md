@@ -41,7 +41,7 @@ Primero creamos el .env que luego añadiremos a .gitignore
 
 ## Pasos en la cuenta de Google
 
-Ahora que ya tenemos el proyecto listo para ser lanzado, debemos antes crear unas credenciales de Google. Para ello,
+Ahora que ya tenemos el proyecto listo para ser lanzado, antes debemos crear unas credenciales de Google. Para ello,
 escribiremos en google: google credentials:
 
 ![img](./assets/busquedagooglecredentials.png)
@@ -99,3 +99,9 @@ Pulsamos en guardar y nos aparecerán nuestro ID de cliente y secreto de Cliente
 Una vez añadidas las credenciales a nuestro .env, el proyecto debería funcionar tal que así:
 
 ![img](./assets/PruebaAuthEditado_TrimGif.gif)
+
+
+Como vemos, la autenticación de google nos crea un jsonwebtoken en las cookies que podemos tratar para manejar sesiones. Este token desaparece al hacer logout.
+
+
+#### Este sería el funcionamiento del proyecto con autenticación de google. Las funciones están detalladas en el código con comentarios.
