@@ -17,3 +17,8 @@ Demostración de autenticación con Google hecha en Node.js con express, passpor
 npm i 
 npm i --save-dev nodemon
 ```
+
+Start project in localhost:3000
+```javascript
+npm start
+```
