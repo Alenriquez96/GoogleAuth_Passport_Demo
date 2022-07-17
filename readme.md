@@ -37,9 +37,20 @@ Primero creamos el .env que luego añadiremos a .gitignore
   CLIENT_ID
   CLIENT_SECRET
 ```
-## Cuenta de Google
+
+
+## Pasos en la cuenta de Google
 
 Ahora que ya tenemos el proyecto listo para ser lanzado, debemos antes crear unas credenciales de Google. Para ello,
 escribiremos en google: google credentials:
 
 ![img](./assets/busquedagooglecredentials.png)
+
+Nos dirigimos a este enlace. Una vez dentro nos aparecerá una opción de crear proyecto, lo creamos y le ponemos el nombre que queramos.
+
+
+El siguiente paso es crear un ID de cliente OAuth, para ello iremos aquí:
+
+![img](./assets/clienteAuth.png)
+
+
