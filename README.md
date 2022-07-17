@@ -18,7 +18,13 @@ npm i
 npm i --save-dev nodemon
 ```
 
-Start project in localhost:3000
+Para iniciar el proyecto en localhost:3000
 ```javascript
-npm start
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+```
+Y después iniciar
+```javascript
+  npm start
 ```
