@@ -37,3 +37,8 @@ Primero creamos el .env que luego añadiremos a .gitignore
   CLIENT_ID
   CLIENT_SECRET
 ```
+## Cuenta de Google
+
+Ahora que ya tenemos el proyecto listo para ser lanzado, debemos antes crear unas credenciales de Google. Para ello,
+escribiremos en google: google credentials:
+
