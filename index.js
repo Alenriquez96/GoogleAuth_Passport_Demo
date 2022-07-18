@@ -28,7 +28,7 @@ app.get("/google/callBack",
     passport.authenticate('google', { failureRedirect: '/auth/failure' }), 
     //Función exitosa
     (req,res)=>{
-    //En el cuerpo de esta función podemos almacenar usuarios en nuestra bbdd con el objeto que nos proporciona req.user
+    //En el cuerpo de esta función podemos almacenar usuarios en nuestra bbdd con el objeto que nos proporciona req.user (Para ello es necesario hacer la función asíncrona)
 
     //Estos son los pasos para crear un token si la autenticación es exitosa
     const payload = {
@@ -64,4 +64,4 @@ app.get('/logout', (req, res) => {
 
 app.listen(port, ()=>{
     console.log(`Example app listening at http://localhost:${port}`)
-})
+});

@@ -21,4 +21,4 @@ passport.serializeUser(function (user, done) {
 //Determina que objeto borrar de la sesión: user
 passport.deserializeUser(function (user, done) {
     done(null,user)
-})
+});
